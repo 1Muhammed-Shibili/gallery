@@ -4,9 +4,8 @@ import 'package:http/http.dart' as http;
 
 class PixabayService {
   final String _baseUrl = 'https://pixabay.com/api/';
-  final String _apiKey = '46349662-8b4d45dcb41a0404d38c92b7e'; // Your API key
+  final String _apiKey = '46349662-8b4d45dcb41a0404d38c92b7e';
 
-  /// Fetches a list of images from the Pixabay API
   Future<List<PixabayImage>> fetchImages(int page) async {
     try {
       final response = await http.get(
