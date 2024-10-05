@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Gallery',
-      theme: ThemeData(),
       home: GalleryPage(),
     );
   }
