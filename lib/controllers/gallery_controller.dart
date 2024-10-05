@@ -25,7 +25,6 @@ class GalleryController extends GetxController {
       images.addAll(newImages);
       page++;
     } catch (e) {
-      // Handle error
       print('Error fetching images: $e');
     } finally {
       isLoading.value = false;
